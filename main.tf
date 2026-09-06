@@ -31,7 +31,10 @@ name = each.value.name
 location = each.value.location
 account_tier = each.value.account_tier
 account_replication_type = each.value.account_replication_type
+}
 
 
-
+resource "azurerm_resource_group" "mie" {
+name = "mikerg"
+location = "west us"
 }
